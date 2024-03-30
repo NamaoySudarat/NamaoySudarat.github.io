@@ -64,6 +64,20 @@ main {
   min-height: 400px;
 }
 
+p {
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.section-list {
+  max-height: 3em;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
 /* Individual sections */
 section {
   border: 1px solid #dc84f3;
@@ -117,12 +131,8 @@ footer {
   .section-header {
     font-size: 1.2rem;
   }
-  .about-me {
+  .section-list {
     font-size: 0.8rem;
-    padding: 10px;
-  }
-  ul {
-    padding: 10px;
   }
   section img {
     display: none;
