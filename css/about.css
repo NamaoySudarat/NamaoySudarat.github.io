@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Sriracha");
 
+/* Global styles */
 * {
   font-family: Sriracha, sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* Basic layout */
 body {
   display: flex;
   flex-direction: column;
@@ -15,6 +17,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background-color: #f3ccf3;
   color: #333;
@@ -24,13 +27,12 @@ header {
 
 header h1 {
   font-size: 2rem;
-  color: #333;
 }
 
+/* Navigation */
 nav {
   background-color: #e9a8f2;
   padding: 10px 0;
-  height: fit-content;
 }
 
 nav ul {
@@ -53,21 +55,24 @@ nav ul li a:hover {
   color: #dc84f3;
 }
 
+/* Main content */
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  min-height: 400px;
 }
 
+/* Individual sections */
 section {
   border: 1px solid #dc84f3;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background 0.3s, transform 0.3s;
-  box-sizing: border-box;
   background-color: #ffe6e6;
   border-radius: 10px;
   padding: 20px;
+  height: 100%;
 }
 
 section:hover {
@@ -104,6 +109,7 @@ footer {
   margin-top: auto;
 }
 
+/* Responsive design */
 @media screen and (max-width: 480px) {
   header h1 {
     font-size: 1.2rem;
@@ -121,18 +127,8 @@ footer {
   section img {
     display: none;
   }
-  section {
-    padding: 10px;
-  }
-
-  @media screen and (max-width: 210px) {
-    .about-me,
-    ul {
-      display: none;
-    }
-    .section-header {
-      display: none;
-    }
+  main {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
