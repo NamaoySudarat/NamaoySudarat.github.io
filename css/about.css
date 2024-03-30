@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sriracha");
 
 * {
   font-family: Sriracha, sans-serif;
@@ -85,6 +85,7 @@ section img {
   height: auto;
   display: block;
   margin: 0 auto;
+  object-fit: cover;
   box-sizing: border-box;
   border-radius: 50%;
 }
@@ -108,7 +109,15 @@ footer {
     font-size: 1.2rem;
   }
   .section-header {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+  }
+  li,
+  p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  section img {
+    display: none;
   }
 }
 
