@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Page</title>
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Game Page</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="game-guessNumber">
+        <h1>Play with Numbers</h1>
+        <p>Guess the number between 1 and 100:</p>
+        <input type="number" id="guessInput" />
+        <button id="guessButton">Submit</button>
+        <p id="hint"></p>
+        <p id="attempts">Attempts: 0</p>
+      </section>
+      <section id="game-howToPlay">
+        <h1>How to Play</h1>
+        <p>
+          The computer will generate a random number between 1 and 100. You have
+          to guess the number. If your guess is too high, the computer will tell
+          you to guess lower. If your guess is too low, the computer will tell
+          you to guess higher. You have to guess the number in the fewest
+          attempts possible.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Personal Website</p>
+    </footer>
+
+    <script src="script/game.js"></script>
+  </body>
+</html>
