@@ -108,4 +108,7 @@ footer {
   section {
     padding: 10px;
   }
+  img {
+    display: none;
+  }
 }
