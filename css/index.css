@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
+/* Global styles */
 * {
   font-family: Sriracha, sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* Basic layout */
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -15,6 +17,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background-color: #f3ccf3;
   color: #333;
@@ -27,6 +30,7 @@ header h1 {
   color: #333;
 }
 
+/* Navigation */
 nav {
   background-color: #e9a8f2;
   padding: 10px 0;
@@ -53,6 +57,7 @@ nav ul li a:hover {
   color: #dc84f3;
 }
 
+/* Main content */
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Updated to 3 columns */
@@ -136,7 +141,6 @@ footer {
   }
 
   section {
-    /* auto resize */
     padding: 10px;
   }
 }
