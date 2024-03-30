@@ -121,6 +121,19 @@ footer {
   section img {
     display: none;
   }
+  section {
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 210px) {
+    .about-me,
+    ul {
+      display: none;
+    }
+    .section-header {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
