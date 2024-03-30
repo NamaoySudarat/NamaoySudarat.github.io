@@ -111,10 +111,12 @@ footer {
   .section-header {
     font-size: 1.2rem;
   }
-  li,
-  p {
-    display: inline-block;
-    vertical-align: middle;
+  .about-me {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  ul {
+    padding: 10px;
   }
   section img {
     display: none;
