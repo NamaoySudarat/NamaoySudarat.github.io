@@ -108,6 +108,9 @@ footer {
   section {
     padding: 10px;
   }
+  p {
+    font-size: 0.7rem;
+  }
   img {
     width: 50%;
   }
