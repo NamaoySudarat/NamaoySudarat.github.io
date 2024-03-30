@@ -109,6 +109,6 @@ footer {
     padding: 10px;
   }
   img {
-    display: none;
+    width: 50%;
   }
 }
