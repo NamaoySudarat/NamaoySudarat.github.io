@@ -80,11 +80,13 @@ section:hover {
   font-weight: bold;
 }
 
-img {
-  width: 100%;
+section img {
+  max-width: 200px;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 li {
