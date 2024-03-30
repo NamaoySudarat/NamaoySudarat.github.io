@@ -68,7 +68,6 @@ section {
   background-color: #ffe6e6;
   border-radius: 10px;
   padding: 20px;
-  height: 400px;
 }
 
 section:hover {
@@ -83,17 +82,14 @@ section:hover {
 
 img {
   width: 100%;
-  height: 200px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 li {
   margin: 10px 0;
-}
-
-ul {
-  list-style-type: none;
+  font-size: 1rem;
 }
 
 footer {
@@ -104,7 +100,15 @@ footer {
   margin-top: auto;
 }
 
-/* Responsive */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  .section-header {
+    font-size: 1.2em;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header h1 {
     font-size: 1.5rem;
@@ -117,16 +121,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
-  header h1 {
-    font-size: 1.2rem;
-  }
-  .section-header {
-    font-size: 1.2em;
-  }
-
-  section {
-    /* auto resize */
-    padding: 10px;
+@media screen and (max-width: 1024px) {
+  li {
+    font-size: 0.9rem;
   }
 }
